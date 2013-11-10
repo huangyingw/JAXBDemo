@@ -1,0 +1,3 @@
+./src/ContactMethod.java:3:@XmlJavaTypeAdapter(ContactMethodAdapter.class)
+./src/ContactMethodAdapter.java:4:public class ContactMethodAdapter extends
+./src/ContactMethodAdapter.java:5:		XmlAdapter<ContactMethodAdapter.AdaptedContactMethod, ContactMethod> {

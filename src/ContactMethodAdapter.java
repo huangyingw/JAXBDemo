@@ -1,8 +1,7 @@
-import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
 public class ContactMethodAdapter extends
-		XmlAdapter<ContactMethodAdapter.AdaptedContactMethod, ContactMethod> {
+		XmlAdapter<AdaptedContactMethod, ContactMethod> {
 
 	@Override
 	public AdaptedContactMethod marshal(ContactMethod contactMethod)
@@ -38,19 +37,6 @@ public class ContactMethodAdapter extends
 			address.city = adaptedContactMethod.city;
 			return address;
 		}
-	}
-
-	public static class AdaptedContactMethod {
-
-		@XmlAttribute
-		public String number;
-
-		@XmlAttribute
-		public String street;
-
-		@XmlAttribute
-		public String city;
-
 	}
 
 }

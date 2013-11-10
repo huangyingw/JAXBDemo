@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageset template="htapage.vm" fileExtension="htm">
+
+    <pagedef
+            path="loans/dashboard"
+            cssFileName="list.css">
+
+        <javascript name="mainbundle">
+            <include path="common/ooutil.js"/>
+            <include path="common/XMLMap.js"/>
+            <include path="common/Collections.js"/>
+            <include path="common/serverRequestUtils.js"/>
+            <include path="common/FieldUtils.js"/>
+            <include path="common/CPathUtilities.js" />
+            <include path="loans/dashboard/core/main.js" />
+            <include path="common/pane/_Pane.js" />
+            <include path="common/pane/_CTPane.js" />
+            <include path="common/pane/_SearchableCTPane.js" />
+            <include path="common/ServerManagedCollectionTable.js" />
+            <include path="common/PaginatedServerManagedCollectionTable.js" />
+            <include path="loans/dashboard/core/util.js" />
+            <include path="loans/dashboard/core/TasksSearchableCTPane.js" />
+            <include path="loans/dashboard/core/AlertsSearchableCTPane.js" />
+            <include path="loans/dashboard/core/WorkflowCTPane.js" />
+            <include path="loans/dashboard/standard/TasksSearchableCTPane.js" />
+            <include path="loans/dashboard/standard/WorkflowCTPane.js" />
+            <include path="loans/dashboard/core/debug/debug.js" />
+        </javascript>
+
+        <html name="body" path="loans/dashboard/standard/body.jsp"/>
+    </pagedef>
+    <pagedef 
+            path="offices/autoassign"
+            cssFileName="group.css"
+            formPath="offices/autoassign/form.xml">
+        <javascript name="mainbundle">
+            <include path="administrator/offices/autoassign/menubar.jsp" />
+            <include path="administrator/offices/menu.js" />
+            <include path="administrator/offices/autoassign/util.js" />
+            <include path="common/Collections.js" />
+            <include path="administrator/offices/autoassign/PoolUI.js" />
+            <include path="administrator/offices/autoassign/SubordinationPoolUI.js" />
+            <include path="administrator/offices/autoassign/PNCRenewalLoanOfficerPoolUI.js" />
+            <include path="administrator/offices/autoassign/PNCSubordinationPNCLenderPoolUI.js" />
+            <include path="administrator/offices/autoassign/PNCSubordinationLPSStreamlinePoolUI.js" />
+            <include path="administrator/offices/autoassign/collection_table_defs.js" />
+            <include path="administrator/offices/autoassign/links.js" /> 
+            <include path="administrator/offices/autoassign/main.js" /> 
+        </javascript>
+        <html name="body" path="administrator/offices/autoassign/body.jsp" />
+    </pagedef>
+</pageset>

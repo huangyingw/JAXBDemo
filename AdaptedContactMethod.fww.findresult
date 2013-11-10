@@ -1,0 +1,5 @@
+./src/AdaptedContactMethod.java:4:public class AdaptedContactMethod {
+./src/ContactMethodAdapter.java:4:		XmlAdapter<AdaptedContactMethod, ContactMethod> {
+./src/ContactMethodAdapter.java:7:	public AdaptedContactMethod marshal(ContactMethod contactMethod)
+./src/ContactMethodAdapter.java:12:		AdaptedContactMethod adaptedContactMethod = new AdaptedContactMethod();
+./src/ContactMethodAdapter.java:25:	public ContactMethod unmarshal(AdaptedContactMethod adaptedContactMethod)
