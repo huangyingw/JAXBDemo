@@ -1,0 +1,7 @@
+./src/Demo.java:16:		// for (ContactMethod contactMethod : pageDef.getContactMethods()) {
+./src/ContactMethod.java:4:public abstract class ContactMethod {
+./src/PhoneNumber.java:2:public class PhoneNumber extends ContactMethod {
+./src/Address.java:1:public class Address extends ContactMethod {
+./src/ContactMethodAdapter.java:4:		XmlAdapter<AdaptedContactMethod, ContactMethod> {
+./src/ContactMethodAdapter.java:7:	public AdaptedContactMethod marshal(ContactMethod contactMethod)
+./src/ContactMethodAdapter.java:25:	public ContactMethod unmarshal(AdaptedContactMethod adaptedContactMethod)
