@@ -8,10 +8,10 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 public class PageDef {
 
 	@XmlElement(name = "javascript")
-	private List<Javascript> contactMethods;
+	private List<Javascript> javascripts;
 
-	public List<Javascript> getContactMethods() {
-		return contactMethods;
+	public List<Javascript> getJavascripts() {
+		return javascripts;
 	}
 
 }

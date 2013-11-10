@@ -13,7 +13,7 @@ public class Demo {
 		File xml = new File("src/pageset.xml");
 		PageDef pageDef = (PageDef) unmarshaller.unmarshal(xml);
 
-		for (Javascript javascript : pageDef.getContactMethods()) {
+		for (Javascript javascript : pageDef.getJavascripts()) {
 			System.out.println(javascript.getClass());
 		}
 
