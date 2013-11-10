@@ -13,9 +13,9 @@ public class Demo {
 		File xml = new File("src/pageset.xml");
 		PageDef pageDef = (PageDef) unmarshaller.unmarshal(xml);
 
-		// for (ContactMethod contactMethod : pageDef.getContactMethods()) {
-		// System.out.println(contactMethod.getClass());
-		// }
+		for (Javascript javascript : pageDef.getContactMethods()) {
+			System.out.println(javascript.getClass());
+		}
 
 		Marshaller marshaller = jc.createMarshaller();
 		marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
