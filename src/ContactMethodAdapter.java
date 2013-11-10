@@ -1,15 +1,15 @@
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
 public class ContactMethodAdapter extends
-		XmlAdapter<AdaptedContactMethod, ContactMethod> {
+		XmlAdapter<AdaptedPageDef, ContactMethod> {
 
 	@Override
-	public AdaptedContactMethod marshal(ContactMethod contactMethod)
+	public AdaptedPageDef marshal(ContactMethod contactMethod)
 			throws Exception {
 		if (null == contactMethod) {
 			return null;
 		}
-		AdaptedContactMethod adaptedContactMethod = new AdaptedContactMethod();
+		AdaptedPageDef adaptedContactMethod = new AdaptedPageDef();
 		if (contactMethod instanceof Address) {
 			Address address = (Address) contactMethod;
 			adaptedContactMethod.street = address.street;
@@ -22,7 +22,7 @@ public class ContactMethodAdapter extends
 	}
 
 	@Override
-	public ContactMethod unmarshal(AdaptedContactMethod adaptedContactMethod)
+	public ContactMethod unmarshal(AdaptedPageDef adaptedContactMethod)
 			throws Exception {
 		if (null == adaptedContactMethod) {
 			return null;
