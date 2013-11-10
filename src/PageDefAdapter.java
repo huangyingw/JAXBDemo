@@ -1,6 +1,6 @@
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
-public class ContactMethodAdapter extends
+public class PageDefAdapter extends
 		XmlAdapter<AdaptedPageDef, ContactMethod> {
 
 	@Override

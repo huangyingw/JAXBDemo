@@ -4,7 +4,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 @XmlRootElement(name = "pagedef")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlJavaTypeAdapter(ContactMethodAdapter.class)
+@XmlJavaTypeAdapter(PageDefAdapter.class)
 public class PageDef {
 
 	@XmlElement(name = "javascript")
