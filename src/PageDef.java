@@ -16,6 +16,14 @@ public class PageDef {
 	@XmlJavaTypeAdapter(FormPathAdapter.class)
 	public FormPath formPath;
 
+	public FormPath getFormPath() {
+		return formPath;
+	}
+
+	public void setFormPath(FormPath formPath) {
+		this.formPath = formPath;
+	}
+
 	@XmlElement(name = "javascript")
 	private List<Javascript> javascripts;
 
