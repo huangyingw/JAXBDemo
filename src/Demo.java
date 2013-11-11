@@ -23,3 +23,4 @@ public class Demo {
 	}
 
 }
+// read from xml, while getformpath return an object
