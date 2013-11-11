@@ -1,4 +1,4 @@
-public class Address extends ContactMethod {
+public class Address extends FormPath {
 
 	protected String street;
 	protected String city;
