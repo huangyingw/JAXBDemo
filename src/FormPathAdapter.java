@@ -3,14 +3,14 @@ import javax.xml.bind.annotation.adapters.XmlAdapter;
 public class FormPathAdapter extends XmlAdapter<String, FormPath> {
 
 	@Override
-	public String marshal(FormPath contactMethod) throws Exception {
-		return contactMethod.toString();
+	public String marshal(FormPath formPath) throws Exception {
+		return formPath.toString();
 	}
 
 	@Override
-	public FormPath unmarshal(String adaptedContactMethod) throws Exception {
+	public FormPath unmarshal(String formPathStr) throws Exception {
 
-		return new FormPath(adaptedContactMethod);
+		return new FormPath(formPathStr);
 	}
 
 }

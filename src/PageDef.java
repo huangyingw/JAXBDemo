@@ -4,7 +4,6 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 @XmlRootElement(name = "pagedef")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlJavaTypeAdapter(FormPathAdapter.class)
 public class PageDef {
 
 	@XmlAttribute

@@ -21,6 +21,4 @@ public class Demo {
 		marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 		marshaller.marshal(pageDef, System.out);
 	}
-
 }
-// read from xml, while getformpath return an object
