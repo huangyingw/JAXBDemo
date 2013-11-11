@@ -7,6 +7,15 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 @XmlJavaTypeAdapter(PageDefAdapter.class)
 public class PageDef {
 
+	@XmlAttribute
+	public String path;
+
+	@XmlAttribute
+	public String cssFileName;
+
+	@XmlAttribute
+	public String formPath;
+
 	@XmlElement(name = "javascript")
 	private List<Javascript> javascripts;
 
