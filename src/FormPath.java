@@ -1,5 +1,9 @@
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
-public abstract class FormPath {
+public class FormPath {
+
+	public FormPath(String adaptedContactMethod) {
+		// TODO Auto-generated constructor stub
+	}
 
 }

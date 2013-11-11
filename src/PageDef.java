@@ -14,7 +14,8 @@ public class PageDef {
 	public String cssFileName;
 
 	@XmlAttribute
-	public String formPath;
+	@XmlJavaTypeAdapter(FormPathAdapter.class)
+	public FormPath formPath;
 
 	@XmlElement(name = "javascript")
 	private List<Javascript> javascripts;
