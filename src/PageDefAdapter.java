@@ -1,24 +1,22 @@
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
-public class PageDefAdapter extends
-		XmlAdapter<AdaptedPageDef, ContactMethod> {
+public class PageDefAdapter extends XmlAdapter<AdaptedPageDef, ContactMethod> {
 
 	@Override
-	public AdaptedPageDef marshal(ContactMethod contactMethod)
-			throws Exception {
+	public AdaptedPageDef marshal(ContactMethod contactMethod) throws Exception {
 		if (null == contactMethod) {
 			return null;
 		}
-		AdaptedPageDef adaptedContactMethod = new AdaptedPageDef();
+		AdaptedPageDef adaptedPageDef = new AdaptedPageDef();
 		if (contactMethod instanceof Address) {
 			Address address = (Address) contactMethod;
-			adaptedContactMethod.street = address.street;
-			adaptedContactMethod.city = address.city;
+			adaptedPageDef.cssFileName = address.street;
+			adaptedPageDef.formPath = address.city;
 		} else {
 			PhoneNumber phoneNumber = (PhoneNumber) contactMethod;
-			adaptedContactMethod.number = phoneNumber.number;
+			adaptedPageDef.path = phoneNumber.number;
 		}
-		return adaptedContactMethod;
+		return adaptedPageDef;
 	}
 
 	@Override
@@ -27,14 +25,14 @@ public class PageDefAdapter extends
 		if (null == adaptedContactMethod) {
 			return null;
 		}
-		if (null != adaptedContactMethod.number) {
+		if (null != adaptedContactMethod.path) {
 			PhoneNumber phoneNumber = new PhoneNumber();
-			phoneNumber.number = adaptedContactMethod.number;
+			phoneNumber.number = adaptedContactMethod.path;
 			return phoneNumber;
 		} else {
 			Address address = new Address();
-			address.street = adaptedContactMethod.street;
-			address.city = adaptedContactMethod.city;
+			address.street = adaptedContactMethod.cssFileName;
+			address.city = adaptedContactMethod.formPath;
 			return address;
 		}
 	}

@@ -3,12 +3,12 @@ import javax.xml.bind.annotation.XmlAttribute;
 public class AdaptedPageDef {
 
 	@XmlAttribute
-	public String number;
+	public String path;
 
 	@XmlAttribute
-	public String street;
+	public String cssFileName;
 
 	@XmlAttribute
-	public String city;
+	public String formPath;
 
 }
