@@ -1,0 +1,4 @@
+./src/PageDefAdapter.java:4:		XmlAdapter<AdaptedPageDef, ContactMethod> {
+./src/PageDefAdapter.java:7:	public AdaptedPageDef marshal(ContactMethod contactMethod)
+./src/PageDefAdapter.java:25:	public ContactMethod unmarshal(AdaptedPageDef adaptedContactMethod)
+./src/ContactMethod.java:3:public abstract class ContactMethod {
