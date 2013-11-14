@@ -1,6 +1,7 @@
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 @XmlJavaTypeAdapter(MenuPathAdapter.class)
-public abstract class MenuPath {
-
+public class MenuPath {
+	protected String street;
+	protected String city;
 }

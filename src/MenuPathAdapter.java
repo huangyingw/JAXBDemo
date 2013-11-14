@@ -1,7 +1,6 @@
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
-public class MenuPathAdapter extends
-		XmlAdapter<AdaptedContactMethod, MenuPath> {
+public class MenuPathAdapter extends XmlAdapter<AdaptedContactMethod, MenuPath> {
 
 	@Override
 	public AdaptedContactMethod marshal(MenuPath contactMethod)
@@ -10,11 +9,9 @@ public class MenuPathAdapter extends
 			return null;
 		}
 		AdaptedContactMethod adaptedContactMethod = new AdaptedContactMethod();
-		if (contactMethod instanceof Address) {
-			Address address = (Address) contactMethod;
-			adaptedContactMethod.street = address.street;
-			adaptedContactMethod.city = address.city;
-		}
+		MenuPath address = (MenuPath) contactMethod;
+		adaptedContactMethod.street = address.street;
+		adaptedContactMethod.city = address.city;
 		return adaptedContactMethod;
 	}
 
@@ -24,7 +21,7 @@ public class MenuPathAdapter extends
 		if (null == adaptedContactMethod) {
 			return null;
 		} else {
-			Address address = new Address();
+			MenuPath address = new MenuPath();
 			address.street = adaptedContactMethod.street;
 			address.city = adaptedContactMethod.city;
 			return address;
