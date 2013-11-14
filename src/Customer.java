@@ -6,10 +6,10 @@ import javax.xml.bind.annotation.*;
 public class Customer {
 
 	@XmlElement(name = "menuPath")
-	private List<MenuPath> contactMethods;
+	private List<MenuPath> menuPaths;
 
-	public List<MenuPath> getContactMethods() {
-		return contactMethods;
+	public List<MenuPath> getMenuPaths() {
+		return menuPaths;
 	}
 
 }
