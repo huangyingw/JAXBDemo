@@ -14,7 +14,7 @@ public class Demo {
 		HTAPageDef hTAPageDef = (HTAPageDef) unmarshaller.unmarshal(xml);
 
 		for (MenuPath menuPath : hTAPageDef.getMenuPaths()) {
-			System.out.println(menuPath.getClass());
+			System.out.println(menuPath.getPath());
 		}
 
 		Marshaller marshaller = jc.createMarshaller();
