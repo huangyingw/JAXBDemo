@@ -8,9 +8,9 @@ public class MenuPathAdapter extends XmlAdapter<AdaptedMenuPath, MenuPath> {
 			return null;
 		}
 		AdaptedMenuPath adaptedContactMethod = new AdaptedMenuPath();
-		MenuPath address = (MenuPath) contactMethod;
-		adaptedContactMethod.street = address.street;
-		adaptedContactMethod.city = address.city;
+		MenuPath menuPath = (MenuPath) contactMethod;
+		adaptedContactMethod.street = menuPath.street;
+		adaptedContactMethod.city = menuPath.city;
 		return adaptedContactMethod;
 	}
 
@@ -20,10 +20,10 @@ public class MenuPathAdapter extends XmlAdapter<AdaptedMenuPath, MenuPath> {
 		if (null == adaptedContactMethod) {
 			return null;
 		} else {
-			MenuPath address = new MenuPath();
-			address.street = adaptedContactMethod.street;
-			address.city = adaptedContactMethod.city;
-			return address;
+			MenuPath menuPath = new MenuPath();
+			menuPath.street = adaptedContactMethod.street;
+			menuPath.city = adaptedContactMethod.city;
+			return menuPath;
 		}
 	}
 
