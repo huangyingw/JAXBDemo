@@ -11,15 +11,15 @@ public class Demo {
 
 		Unmarshaller unmarshaller = jc.createUnmarshaller();
 		File xml = new File("src/input.xml");
-		HTAPageDef customer = (HTAPageDef) unmarshaller.unmarshal(xml);
+		HTAPageDef hTAPageDef = (HTAPageDef) unmarshaller.unmarshal(xml);
 
-		for (MenuPath contactMethod : customer.getMenuPaths()) {
-			System.out.println(contactMethod.getClass());
+		for (MenuPath menuPath : hTAPageDef.getMenuPaths()) {
+			System.out.println(menuPath.getClass());
 		}
 
 		Marshaller marshaller = jc.createMarshaller();
 		marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-		marshaller.marshal(customer, System.out);
+		marshaller.marshal(hTAPageDef, System.out);
 	}
 
 }
