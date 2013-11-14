@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.*;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Customer {
 
-	@XmlElement(name = "contact-method")
+	@XmlElement(name = "menuPath")
 	private List<ContactMethod> contactMethods;
 
 	public List<ContactMethod> getContactMethods() {

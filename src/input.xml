@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <customer>
-	<contact-method number="555-1111" />
-	<contact-method street="1 A St" city="Any Town" />
-	<contact-method number="555-2222" />
+	<menuPath number="555-1111" />
+	<menuPath street="1 A St" city="Any Town" />
+	<menuPath number="555-2222" />
+    <menuPath hilight="offices/autoassign" path="administrator/offices/menu.xml" />
 </customer>
