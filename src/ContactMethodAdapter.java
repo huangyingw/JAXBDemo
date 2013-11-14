@@ -14,9 +14,6 @@ public class ContactMethodAdapter extends
 			Address address = (Address) contactMethod;
 			adaptedContactMethod.street = address.street;
 			adaptedContactMethod.city = address.city;
-		} else {
-			PhoneNumber phoneNumber = (PhoneNumber) contactMethod;
-			adaptedContactMethod.number = phoneNumber.number;
 		}
 		return adaptedContactMethod;
 	}
@@ -26,11 +23,6 @@ public class ContactMethodAdapter extends
 			throws Exception {
 		if (null == adaptedContactMethod) {
 			return null;
-		}
-		if (null != adaptedContactMethod.number) {
-			PhoneNumber phoneNumber = new PhoneNumber();
-			phoneNumber.number = adaptedContactMethod.number;
-			return phoneNumber;
 		} else {
 			Address address = new Address();
 			address.street = adaptedContactMethod.street;
