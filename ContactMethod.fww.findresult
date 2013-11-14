@@ -1,0 +1,7 @@
+./src/ContactMethodAdapter.java:7:	public AdaptedContactMethod marshal(Address contactMethod)
+./src/ContactMethodAdapter.java:9:		if (null == contactMethod) {
+./src/ContactMethodAdapter.java:13:		if (contactMethod instanceof Address) {
+./src/ContactMethodAdapter.java:14:			Address address = (Address) contactMethod;
+./src/ContactMethodAdapter.java:18:			PhoneNumber phoneNumber = (PhoneNumber) contactMethod;
+./src/Demo.java:16:		for (Address contactMethod : customer.getContactMethods()) {
+./src/Demo.java:17:			System.out.println(contactMethod.getClass());

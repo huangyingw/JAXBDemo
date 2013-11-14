@@ -1,0 +1,2 @@
+./src/ContactMethodAdapter.java:18:			PhoneNumber phoneNumber = (PhoneNumber) contactMethod;
+./src/ContactMethodAdapter.java:31:			PhoneNumber phoneNumber = new PhoneNumber();
