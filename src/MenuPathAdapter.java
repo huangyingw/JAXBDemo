@@ -1,6 +1,6 @@
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
-public class ContactMethodAdapter extends
+public class MenuPathAdapter extends
 		XmlAdapter<AdaptedContactMethod, MenuPath> {
 
 	@Override

@@ -1,6 +1,6 @@
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
-@XmlJavaTypeAdapter(ContactMethodAdapter.class)
+@XmlJavaTypeAdapter(MenuPathAdapter.class)
 public abstract class MenuPath {
 
 }
