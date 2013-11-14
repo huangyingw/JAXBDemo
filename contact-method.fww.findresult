@@ -1,0 +1,4 @@
+./src/Customer.java:8:	@XmlElement(name = "contact-method")
+./src/input.xml:3:	<contact-method number="555-1111" />
+./src/input.xml:4:	<contact-method street="1 A St" city="Any Town" />
+./src/input.xml:5:	<contact-method number="555-2222" />
