@@ -1,9 +1,9 @@
 import java.util.List;
 import javax.xml.bind.annotation.*;
 
-@XmlRootElement
+@XmlRootElement(name = "pagedef")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Customer {
+public class HTAPageDef {
 
 	@XmlElement(name = "menuPath")
 	private List<MenuPath> contactMethods;

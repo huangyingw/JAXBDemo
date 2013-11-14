@@ -7,11 +7,11 @@ import javax.xml.bind.Unmarshaller;
 public class Demo {
 
 	public static void main(String[] args) throws Exception {
-		JAXBContext jc = JAXBContext.newInstance(Customer.class);
+		JAXBContext jc = JAXBContext.newInstance(HTAPageDef.class);
 
 		Unmarshaller unmarshaller = jc.createUnmarshaller();
 		File xml = new File("src/input.xml");
-		Customer customer = (Customer) unmarshaller.unmarshal(xml);
+		HTAPageDef customer = (HTAPageDef) unmarshaller.unmarshal(xml);
 
 		for (MenuPath contactMethod : customer.getContactMethods()) {
 			System.out.println(contactMethod.getClass());
