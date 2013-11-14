@@ -3,15 +3,14 @@ import javax.xml.bind.annotation.adapters.XmlAdapter;
 public class MenuPathAdapter extends XmlAdapter<AdaptedMenuPath, MenuPath> {
 
 	@Override
-	public AdaptedMenuPath marshal(MenuPath contactMethod) throws Exception {
-		if (null == contactMethod) {
+	public AdaptedMenuPath marshal(MenuPath menuPath) throws Exception {
+		if (null == menuPath) {
 			return null;
 		}
-		AdaptedMenuPath adaptedContactMethod = new AdaptedMenuPath();
-		MenuPath menuPath = (MenuPath) contactMethod;
-		adaptedContactMethod.hilight = menuPath.hilight;
-		adaptedContactMethod.path = menuPath.path;
-		return adaptedContactMethod;
+		AdaptedMenuPath adaptedMenuPath = new AdaptedMenuPath();
+		adaptedMenuPath.hilight = menuPath.hilight;
+		adaptedMenuPath.path = menuPath.path;
+		return adaptedMenuPath;
 	}
 
 	@Override
