@@ -3,9 +3,9 @@ import javax.xml.bind.annotation.XmlAttribute;
 public class AdaptedMenuPath {
 
 	@XmlAttribute
-	public String street;
+	public String hilight;
 
 	@XmlAttribute
-	public String city;
+	public String path;
 
 }
