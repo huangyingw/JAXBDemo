@@ -13,7 +13,7 @@ public class Demo {
 		File xml = new File("src/input.xml");
 		HTAPageDef customer = (HTAPageDef) unmarshaller.unmarshal(xml);
 
-		for (MenuPath contactMethod : customer.getContactMethods()) {
+		for (MenuPath contactMethod : customer.getMenuPaths()) {
 			System.out.println(contactMethod.getClass());
 		}
 

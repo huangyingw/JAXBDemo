@@ -3,8 +3,7 @@ import javax.xml.bind.annotation.adapters.XmlAdapter;
 public class MenuPathAdapter extends XmlAdapter<AdaptedMenuPath, MenuPath> {
 
 	@Override
-	public AdaptedMenuPath marshal(MenuPath contactMethod)
-			throws Exception {
+	public AdaptedMenuPath marshal(MenuPath contactMethod) throws Exception {
 		if (null == contactMethod) {
 			return null;
 		}
