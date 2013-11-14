@@ -1,10 +1,10 @@
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
 public class ContactMethodAdapter extends
-		XmlAdapter<AdaptedContactMethod, ContactMethod> {
+		XmlAdapter<AdaptedContactMethod, MenuPath> {
 
 	@Override
-	public AdaptedContactMethod marshal(ContactMethod contactMethod)
+	public AdaptedContactMethod marshal(MenuPath contactMethod)
 			throws Exception {
 		if (null == contactMethod) {
 			return null;
@@ -22,7 +22,7 @@ public class ContactMethodAdapter extends
 	}
 
 	@Override
-	public ContactMethod unmarshal(AdaptedContactMethod adaptedContactMethod)
+	public MenuPath unmarshal(AdaptedContactMethod adaptedContactMethod)
 			throws Exception {
 		if (null == adaptedContactMethod) {
 			return null;

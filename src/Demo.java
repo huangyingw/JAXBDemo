@@ -13,7 +13,7 @@ public class Demo {
 		File xml = new File("src/input.xml");
 		Customer customer = (Customer) unmarshaller.unmarshal(xml);
 
-		for (ContactMethod contactMethod : customer.getContactMethods()) {
+		for (MenuPath contactMethod : customer.getContactMethods()) {
 			System.out.println(contactMethod.getClass());
 		}
 

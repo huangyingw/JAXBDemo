@@ -1,5 +1,5 @@
 
-public class PhoneNumber extends ContactMethod {
+public class PhoneNumber extends MenuPath {
  
     protected String number;
  

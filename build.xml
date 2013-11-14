@@ -49,7 +49,7 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-    <target name="Demo (1)">
+    <target depends="build" name="Demo (1)">
         <java classname="Demo" failonerror="true" fork="yes">
             <classpath refid="JAXBDemo.classpath"/>
         </java>
